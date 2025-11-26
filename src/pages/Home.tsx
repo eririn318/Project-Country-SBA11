@@ -50,7 +50,10 @@
 import CountryList from '../components/CountryList'
 
 function Home() {
-  return <CountryList />
+  return (
+  <div >
+    <CountryList />
+  </div>)
 }
 
 export default Home;

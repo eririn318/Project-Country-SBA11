@@ -4,8 +4,8 @@ import {useTheme} from '../context/ThemeContext'
 function NavBar() {
     const {darkMode, toggleDarkMode} = useTheme()
     return (
-        <nav>   
-            <div>
+        <nav >   
+            <div className="flex justify-between items-center md:flex">
                 <h1>Where in the world?</h1>
                 <button
                 onClick={toggleDarkMode}

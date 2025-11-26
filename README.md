@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+# I started by planning the component architecture, breaking down the application into reusable components like SearchBar, RegionFilter, and CountryCard. I implemented the routing structure using React Router, establishing clear navigation between the home page and individual country detail pages.# React + TypeScript + Vite
+
+# Challenges was properly fetching and displaying border countries. The REST Countries API returns border country codes, which required additional API calls to retrieve the full country data. Managing these multiple asynchronous requests and handling edge cases where countries have no borders required careful implementation using Promise.all().
+
+# An additional improvement would be using a CSS framework or component library to reduce styling time.**
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

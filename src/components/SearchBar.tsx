@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react";
-import { BackButton } from "./BackButton";
+
 
 interface SearchBarProps {
     value: string;
@@ -14,9 +14,9 @@ export function SearchBar({value, onChange, placeholder = "Search..."}:SearchBar
     }
 
     return (
-        <div>
-          
+        <div className="">
             <input
+            className="border border-1 lg:w-100 pl-3 md:w-50"
             type="text"
             placeholder={placeholder}
             value={value}

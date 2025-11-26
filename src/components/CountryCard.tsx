@@ -168,17 +168,19 @@ useEffect(()=> {
       setError(null)
 
       const response = await fetch(`https://restcountries.com/v3.1/alpha/${code}`)
+      console.log(response)
 
       if (!response.ok) {
         throw new Error('Country not found')
       }
-
+     
       const data = await response.json()
       const countryData = data[0]
       setCountry(countryData)
 
       //fetch border countries
       if (countryData.borders && countryData.borders.length > 0) {
+        console.log("Borders codes:", countryData.borders);
         const borderPromises = countryData.borders.map(
           (border: string)=> 
         fetch(`https://restcountries.com/v3.1/alpha/${border}`)

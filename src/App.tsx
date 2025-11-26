@@ -9,20 +9,25 @@ function App() {
 
 
   return (
-   
+  
     <ThemeProvider>
          <NavBar />
-      <h1>Countries App</h1>
-   <main>
+      {/* <h1>Countries App</h1> */}
+
+
+   <main >
+    <div>
       <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/country" element={<CountryList/>}/>
           <Route path="/country/:code" element={<CountryCard/>}/>
       </Routes>
       {/* <Home/> */}
+      </div>
       </main>
   
     </ThemeProvider>
+ 
   )
 }
 

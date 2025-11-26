@@ -17,6 +17,7 @@ export function RegionFilter({ value, onChange }: RegionFilterProps) {
 return(
     <div>
         <select
+        className="border border-1 md:w-auto"
         value={value}
         onChange={handleChange}
         aria-label="Filter by region"

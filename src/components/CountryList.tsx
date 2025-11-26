@@ -18,7 +18,7 @@ function CountryList(){
 
     return(
         <>
-        <div>
+        <div className="flex justify-between items-center mb-5">
         <SearchBar 
         value={searchTerm}
         onChange={setSearchTerm}
@@ -36,8 +36,9 @@ function CountryList(){
                 <p>No countries found matching your criteria</p>
             </div>
         ):(
-            <div>
-                {countries.map(country=> (
+            // <div  className="grid grid-cols-4 grid-rows-2 gap-10" >
+           <div  className="flex flex-col grid-cols-1 md:flex-row justify-between items-center gap-4 grid lg:grid-cols-4" >
+                {countries.slice(0,8).map(country=> (
                     <CountryCardItem key={country.cca3} country={country} />
                ) )}
             </div>
