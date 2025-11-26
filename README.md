@@ -1,3 +1,8 @@
+# Deploy URL:
+https://6926a381369e4cfcd6c5d961--zesty-kulfi-d5fea8.netlify.app/
+https://zesty-kulfi-d5fea8.netlify.app/
+
+
 # I started by planning the component architecture, breaking down the application into reusable components like SearchBar, RegionFilter, and CountryCard. I implemented the routing structure using React Router, establishing clear navigation between the home page and individual country detail pages.# React + TypeScript + Vite
 
 # Challenges was properly fetching and displaying border countries. The REST Countries API returns border country codes, which required additional API calls to retrieve the full country data. Managing these multiple asynchronous requests and handling edge cases where countries have no borders required careful implementation using Promise.all().
